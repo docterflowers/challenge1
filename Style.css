@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+    background-color: var(--Pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    max-width: 440px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* Top image beganning */
+
+.main {
+    max-width: 440px;
+    height: auto;
+}
+
+.girl{
+    object-fit: contain;
+    max-width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Card content Beganning */
+
+.content {
+    text-align: center;
+    max-width: 360px;
+    margin: 0px auto;
+}
+
+.content > h2 {
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+.content > p {
+    margin-top: 20px;
+}
+
+/* Music pricing plan */
+
+.container {
+    padding: 20px;
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.plan {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.annual {
+    font-weight: 900;  
+    font-size: 15px;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.change-btn > a {
+    color: hsl(245, 72, 35);
+    
+}
+
+a:hover {
+    color: hsl(245, 67, 70);
+    text-decoration: none;
+}
+
+/* Final buttons */
+
+.proceed {
+    width: 100%;
+    margin: 20px 0px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #382AE1;
+    color: rgb(234, 240, 255);
+    border: none;
+    font-weight: 700;
+    box-shadow: 0 15px 15px 0 rgba(22, 42, 214, 0.2);
+}
+
+.proceed:hover {
+    background-color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+
+.cancel-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: hsl(225, 6%, 41%);
+}
+
+.cancel-btn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 450px) {
+     .card{
+        min-width: 375px;
+    }
+}
+    
+}
+
+
+.attribution { font-size: 10px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
