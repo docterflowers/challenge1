@@ -23,6 +23,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .card {
@@ -103,7 +106,7 @@ a:hover {
 
 .proceed {
     width: 100%;
-    margin: 20px 0px;
+    margin: 20px auto;
     height: 40px;
     border-radius: 10px;
     background-color: #382AE1;
@@ -134,9 +137,12 @@ a:hover {
     cursor: pointer;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (max-width: 450px) {
      .card{
         min-width: 375px;
+    }
+    body {
+        background-image: url(/images/pattern-background-mobile.svg);
     }
 }
     
